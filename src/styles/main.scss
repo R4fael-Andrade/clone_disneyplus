@@ -3,6 +3,9 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
+@use 'footer';
+
 @font-face {
     font-family: Avenir;
     src: url('../../assets/fonts/Avenir-Regular.woff2');
