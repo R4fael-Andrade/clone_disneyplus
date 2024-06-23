@@ -9,6 +9,10 @@
         margin-top: 44px;
         list-style: none;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         &--is--active {
             display: grid;
         }
@@ -23,6 +27,13 @@
     &__tabs {
         justify-content: center;
         display:flex;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
+
         &__button {
             background: none;
             color: variaveis.$corTextoSecundario;
@@ -35,6 +46,10 @@
             border-bottom: 5px solid transparent;
             &--is--active {
                 border-bottom: 5px solid variaveis.$corTextoSecundario;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }
